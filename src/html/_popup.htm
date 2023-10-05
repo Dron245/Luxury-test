@@ -1,0 +1,24 @@
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<img src="@img/popup/Vector.svg" alt="закрыть">
+			</button>
+			<div class="popup__title">
+				<p>Оставьте свои данные и  мы вам перезвоним</p>
+			</div>
+			<form action="#" class="popup__form">
+				<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше имя" class="input">
+				<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваш телефон*" class="input">
+			</form>
+			<button class="popup__button btn button" type="submit">получить предложение</button>
+			<div class="popup__checkbox checkbox">
+				<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+				<label for="c_1" class="checkbox__label">
+					<div class="checkbox__body"></div>
+					<span class="checkbox__text">Подтверждаю свои данные и даю своё согласие на их обработку</span>
+				</label>
+			</div>
+		</div>
+	</div>
+</div>

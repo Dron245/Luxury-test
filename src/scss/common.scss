@@ -1,0 +1,13 @@
+// Заголовки, общие БЄМ блоки и проче...
+.button {
+	border-radius: 50px;
+	border: 1px solid #3C2C26;
+	color: #000;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1.125rem 2rem;
+	transition: color 0.3s, background-color 0.3s;
+}

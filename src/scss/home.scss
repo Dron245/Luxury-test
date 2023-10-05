@@ -1,0 +1,154 @@
+//====================================================================================================
+.page {
+
+	&__individual {
+	}
+}
+.individual {
+	margin-top: 136px;
+	&__container {
+		// max-width: 100%;
+		// padding-left: 42px;
+		// padding-right: 0;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+
+	&__content {
+		flex: 0 0 43%;
+	}
+
+	&__title {
+		color: #3C2C26;
+		font-family: Crimson;
+		font-size: 2.5rem;
+		// font-style: normal;
+		// fontweight: 400;
+		line-height: 3.5rem; /* 140% */
+		&:not(:last-child) {margin-bottom: 79px;}
+		span {
+			text-transform: uppercase;
+			font-size: rem(64);
+			line-height: math.div(72 , 64);
+		}
+	}
+
+	&__text {
+		font-size: rem(30);
+		line-height: math.div(40 , 30);
+		&:not(:last-child) {margin-bottom: 109px;}
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 4.4375rem;
+	}
+
+	&__link {
+		background: #776053;
+		color:#fff;
+		min-width: 235px;
+		font-family: Сrimson;
+		&:hover{
+			background-color: #fff;
+			color: #776053;
+		}
+	}
+
+	&__subtext {
+		line-height: math.div(18, 14);
+		padding-left: 46px;
+		position: relative;
+		&::before{
+			content:'';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 33px;
+			height: 33px;
+			background: url('@img/individual/info.svg') 0 0 no-repeat;
+		}
+		span {
+			text-decoration: underline;
+		}
+	}
+
+	&__img {
+		// img {width: 100%;}
+		position: relative;
+	}
+
+	&__info {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		border-radius: 70px 0px 0px 0px;
+		border: 0px solid #000;
+		background: #FFF9E8;
+		z-index: 2;
+		padding: 44px 222px 44px 23px;
+	}
+
+	&__info-text {
+		font-size: rem(20);
+		padding-left: 49px;
+		position: relative;
+		font-family: crimson;
+		&::before{
+			content:'';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 39px;
+			height: 39px;
+			background: url('@img/individual/info.svg') 0 0 no-repeat;
+		}
+	}
+}
+.btn {
+}
+.button {
+}
+
+//====================================================================================================
+
+
+.page {
+
+	&__advantages {
+		margin-top: 80px;
+	}
+}
+.advantages {
+
+	&__container {
+		display: flex;
+		align-items: center;
+		// flex-wrap: wrap;
+		gap: 2rem;
+	}
+
+	&__item {
+		padding: 50px 46px 55px 46px;
+		background: url('@img/advantages/bg.png') 0 0 no-repeat;
+	}
+
+	&__img {
+		width: 260px;
+		aspect-ratio: 1/1;
+		img {
+			object-fit: contain;
+		}
+		&:not(:last-child) {margin-bottom: 15px;}
+	}
+
+	&__text {
+		height: 112px;
+		font-size: rem(20);
+		line-height: math.div(28 , 20);
+		text-align: center;
+	}
+}

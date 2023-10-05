@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper" ">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="page__individual individual">
+					<div class="individual__container">
+						<div class="individual__content">
+							<h1 class="individual__title">Индивидуальное изготовление <span>архитектурной керамики</span><br> для облицовки фасадов, декорирования экстерьеров и интерьеров</h1>
+							<p class="individual__text">400* циклов долговечность<br> фасадной керамики Luxury Ceramics</p>
+							<div class="individual__actions">
+								<a type="button" class="individual__link btn button">Смотреть каталог</a>
+								<p class="individual__subtext">Подтверждено <span>испытаниями на морозостойкость</span> от ГУП “НИИМосстрой”</p>
+							</div>
+						</div>
+						<div class="individual__img">
+							<img src="@img/individual/house.png" alt="house">
+							<div class="individual__info">
+								<p class="individual__info-text">Объект выполнен<br> в 2015 году</p>
+							</div>
+						</div>
+						</div>
+				</section>
+				<section class="page__advantages advantages">
+					<div class="advantages__container">
+						<div class="advantages__item">
+							<div class="advantages__img -ibg">
+								<img src="@img/advantages/01.png" alt="">
+							</div>
+							<p class="advantages__text">Изготовление эксклюзивных деталей вручную, и стандартных позиций на станках</p>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__img -ibg">
+								<img src="@img/advantages/02.png" alt="">
+							</div>
+							<p class="advantages__text">Разработка деталировочных чертежей облицовки фасада из керамики</p>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__img -ibg">
+								<img src="@img/advantages/03.png" alt="">
+							</div>
+							<p class="advantages__text">Гибкая ценовая политика</p>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__img -ibg">
+								<img src="@img/advantages/04.png" alt="">
+							</div>
+							<p class="advantages__text">Монтаж архитектурной керамики на объекте с неукоснительным соблюдением технологий</p>
+						</div>
+					</div>
+				</section>
+				<section class="page__galery">
+
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

@@ -1,0 +1,135 @@
+//====================================================================================================
+.test {
+	font-family: Сrimson;
+}
+.test2 {
+	font-family: Montserrat;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+	&__container {
+		padding-block: 1.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		
+	}
+
+	&__logo-text {
+		display: inline-block;
+		margin-left: 1.5rem;
+		color: #1e1e1f;
+		line-height: math.div(18 , 14);
+		width: 7.5rem;
+	}
+
+	&__adress {
+		line-height: math.div(18 , 14);
+	}
+
+	&__contacts {
+		display: flex;
+		align-items: center;
+		gap: 4.375rem;
+	}
+
+	&__btn {
+		&:hover{
+			color: white;
+			background-color: #776053;
+		}
+	}
+}
+.contacts-header {
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+
+	&__mail.btn {
+		color: #776053;
+		text-decoration: underline;
+		&:hover{
+			color:  #1e1e1f;
+		}
+	}
+
+	&__text {
+	}
+
+	&__tel {
+		font-weight: 700;
+	}
+}
+.btn {
+	
+}
+
+a {
+	transition: color 0.3s;
+}
+a:hover {
+	color: #1e1e1f
+}
+//====================================================================================================
+
+//Burger
+/*
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #000;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+*/
